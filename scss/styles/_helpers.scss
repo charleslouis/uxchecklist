@@ -1,0 +1,74 @@
+/* clearfix */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* end clearfix */
+
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.rotate {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.no-touch a:hover {
+    text-decoration: none;
+    border-bottom: 2px solid;
+    padding-bottom: 2px;
+}
+
+#print, #reset {
+    border-radius: 5px;
+    background-color: $blue;
+    color: white;
+    font-size: 0.9em;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.no-touch #print:hover {
+    background-color: $blue-light;
+}
+
+#reset {
+    background-color: transparent;
+    border: 1px solid $orange;
+    color: $orange;
+}
+
+.no-touch #reset:hover {
+    background-color: $orange;
+    color: $white;
+}

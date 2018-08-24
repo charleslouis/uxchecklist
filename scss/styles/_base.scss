@@ -1,0 +1,27 @@
+body {
+    font-family: $body-font-family;
+    font-weight: 300;
+}
+
+
+#footer .typeform-share {
+    border-radius: 5px;
+    background-color: $blue;
+    color: white;
+    font-size: 0.9em;
+    line-height: normal;
+    padding: 5px 10px;
+    margin-left: 10px;
+    text-decoration: none !important;
+    border-bottom: none;
+}
+
+.no-touch #footer .typeform-share:hover {
+    background-color: $blue-light;
+}
+
+.title {
+    color: $white;
+    background: $blue;
+    padding: 0.8rem 1.25rem;
+}
